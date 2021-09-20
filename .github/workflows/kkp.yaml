@@ -57,8 +57,7 @@ jobs:
         uses: actions/checkout@v2
         if: steps.s3-check.outputs.exists == 'false'
       - name: Create s3 bucket and dynamo table
-        working-directory: terraform/aws
-        run: setup_terraform_backend.sh
+        run: terraform/aws/setup_terraform_backend.sh
         if: steps.s3-check.outputs.exists == 'false'
       - name: S3 bucket exists
         run: echo "S3 bucket exists, no action needed"
