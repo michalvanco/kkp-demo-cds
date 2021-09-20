@@ -1,5 +1,3 @@
-# Secrets must be set on a repository firts!
-
 name: "KKP delivery pipeline with GitOps"
 
 on:
