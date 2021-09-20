@@ -1,7 +1,7 @@
 apiVersion: kubermatic.k8s.io/v1
 kind: Project
 metadata:
-  name: vrwsfhuf4y
+  name: fgcjtau7tr
 spec:
   name: cds-demo
 status:

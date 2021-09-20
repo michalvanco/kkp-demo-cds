@@ -12,46 +12,46 @@ dex:
           value: oauth
     staticPasswords:
         - email: michal@kubermatic.com
-          hash: ENC[AES256_GCM,data:lwDnlakrJe8K/O97UAgH/ejV/rC0pRQ4RB23DXIkfs44pE8Om8YxUlGYpZNKQ7lfQUJzCPcdokapzUc2,iv:Aeb/Yl7LHRbsjO0WnGRW68MBalUobG8hV+H+2+I170I=,tag:LA5/mMcH+/2R4CZVIZW09g==,type:str]
+          hash: ENC[AES256_GCM,data:9eFv/Si6k5azX8BhlUXMTpDUuAF9c1AexHOMm07HUuwyMt3cPtNLcs8hi+KUqNtmOql+nYobt9AvU+Q4,iv:XqvocuZ2gsVRui9jcHiHx2Q+bQSfdGSAjxq4t1e2J+c=,tag:14iCH9yLYSvo791EColr6g==,type:str]
           username: michal@kubermatic.com
-          userID: 3952480d-7541-45b8-82bd-1e928261e911
+          userID: d538fece-a352-4b7b-8075-3033efb342a3
     clients:
         - id: kubermatic
           name: Kubermatic
-          secret: ENC[AES256_GCM,data:yHjxytrQcbecNSmK0IxtGTIWqOB2wawdT3/PMYSAGA6mqqqnZhVE8pT4qg==,iv:eRBGw0gnwZQ1Fe7RRyJmyQHBZWPgJuc8jU/vLYUz7S8=,tag:liJlPRIcL6mwZO63QlhmBA==,type:str]
+          secret: ENC[AES256_GCM,data:QTH0kjhHrA9W8mfXXiOR+mnBZPWPAcI8//z6gkG5WvoeRv8oNdHMJKbYMg==,iv:cldxb4Z8TmybN9+3mGqDJ8En/UTw57dxOKtxFc6RLX8=,tag:9bEspo/zQNYZKO2GbmVdcw==,type:str]
           RedirectURIs:
             - https://kkp-demo-cds.lab.kubermatic.io
             - https://kkp-demo-cds.lab.kubermatic.io/projects
         - id: kubermaticIssuer
           name: Kubermatic OIDC Issuer
-          secret: ENC[AES256_GCM,data:/bdlO6/pM6actfY1FA/3mw==,iv:LhTOxge6iI19b6X19UcwNdPtHj1/erXP+vLVNshNaNg=,tag:EBzhS4OgukPTDoWvIMrD5Q==,type:str]
+          secret: ENC[AES256_GCM,data:8uSAOzZ3L/Ng0bUfnjEI0w==,iv:J/UIFvCAL2dH6fNvpfnyU7ufeqUfRHsOqSzjnbF0Bbc=,tag:Xom5Ah14VXN5+4Txu/5iiQ==,type:str]
           RedirectURIs:
             - https://kkp-demo-cds.lab.kubermatic.io/api/v1/kubeconfig
         - id: prometheus
           name: Prometheus
-          secret: ENC[AES256_GCM,data:9UhEWNzymi5aFNsQP8xA2w==,iv:/whNk7HPOzrpFxAgtJPuKG9MU+sr55trhDzvKb9Xze4=,tag:IHQ1xpeXPYU+rWrPFA4G1Q==,type:str]
+          secret: ENC[AES256_GCM,data:6yqCuNBpWCdmG/fG6L+DLg==,iv:xEXkYZuh1YH05Cz6NDzKY/dKb6E1W7qayAnDR+V0jn4=,tag:mPTj9N0A4y0OGE5LMOcjvg==,type:str]
           RedirectURIs:
             - https://prometheus.kkp-demo-cds.lab.kubermatic.io/oauth/callback
         - id: alertmanager
           name: Alertmanager
-          secret: ENC[AES256_GCM,data:voLXfclpaPlXfQttMh0h7w==,iv:lRX6fuizrNjrh8bBJsEAKSnNQwXR+8yjFklIEfVUILM=,tag:/gVtZCriNTjbabU8qS2sxg==,type:str]
+          secret: ENC[AES256_GCM,data:x3/1XX+kw7cU+Xyi39I/Hw==,iv:hHIpCyu5gThg1qY9MjrmyomlkjegTvuuvRiy7vsd1Ng=,tag:Y9MbbBRlxJ4T5iQqjpf80g==,type:str]
           RedirectURIs:
             - https://alertmanager.kkp-demo-cds.lab.kubermatic.io/oauth/callback
         - id: grafana
           name: Grafana
-          secret: ENC[AES256_GCM,data:WdnQLVnhJkWh+xHYCDJcVw==,iv:ukLVTTNPZnEVd7oCAehN6z+PDm09TwJhBJZHKwBhD80=,tag:GQBN6bXIxSF/AriFGXBBMw==,type:str]
+          secret: ENC[AES256_GCM,data:MBcdjAr48NiWQwXN8P9iKg==,iv:Dw/tkpMByCF8CRftCC+cCuejvCSa+GkKGnPGKN1XnNQ=,tag:ZLJpaGq15besoULM6MF52w==,type:str]
           RedirectURIs:
             - https://grafana.kkp-demo-cds.lab.kubermatic.io/oauth/callback
         - id: karma
           name: Karma
-          secret: ENC[AES256_GCM,data:mfCaZYwS5tT097BBWAXmug==,iv:gfJLciLFTIJr+R3qiEmcFTpOMkBH0WmJRApug8q50As=,tag:kCzr4icy5Aokm1gooHKN+A==,type:str]
+          secret: ENC[AES256_GCM,data:myZvuUOs8dstAl8xyoMeEQ==,iv:Z3oDCtiyUQOnpwiTsqhL8TCztHlQeIIMiEu1f0au7/8=,tag:Tgj1UPws2RXCk2ikIwFWZw==,type:str]
           RedirectURIs:
             - https://karma.kkp-demo-cds.lab.kubermatic.io/oauth/callback
 alertmanager:
     host: alertmanager.kkp-demo-cds.lab.kubermatic.io
 grafana:
     user: admin
-    password: ENC[AES256_GCM,data:oXjapeAXXaV4ex4QDj/SLg==,iv:hIsV4uibZFrz699Gj+BZlvC5ANo5iTkC2asJx40/Olk=,tag:i+PmeF2wFh6bjNyGbU6HpQ==,type:str]
+    password: ENC[AES256_GCM,data:pABxWgKIBDsjCawQJW4ZEQ==,iv:FODDHLWjZTp75Hlc5Mxn6zFzLdcj5d0Lv+Mhp5BvhEQ=,tag:ULC95IfkefL1UBQ8H+tKQQ==,type:str]
     provisioning:
         configuration:
             auto_assign_org_role: Editor
@@ -78,8 +78,8 @@ iap:
             upstream_service: prometheus.monitoring.svc.cluster.local
             upstream_port: 9090
             client_id: prometheus
-            client_secret: ENC[AES256_GCM,data:yGF0i7kIFS3qa0IZITEguw==,iv:sKZekMGGXzcwyXQMrT3eXUWoGMVL2EoHiIPWLRUIvyg=,tag:n2W3Hl++SlL51FqNtLiY4g==,type:str]
-            encryption_key: ENC[AES256_GCM,data:y5PfB+nxnY7mDI9YGXqguHnSdX6NMAlBJPV6GMOQw7s=,iv:e7Lu+ts88pFI0denlG0ICGlIQtWcqs8k1W1j914rH/A=,tag:gv0KJ/bCry28S9rxKVc/kQ==,type:str]
+            client_secret: ENC[AES256_GCM,data:6DdduTRXo+ApxDmdf0DuRA==,iv:WJqLO/VeJpoiUE6XW8nBX7bWuD8Fy/8jc1BgDqYz5Jk=,tag:XnBnoBBsqaIvqQWvXjea3w==,type:str]
+            encryption_key: ENC[AES256_GCM,data:PHtn4wK4u27+zV/5I02O+hr7ZtdyxEPAy+jltkEHemE=,iv:tZnPT7+KyAwT7kcFeSy99csl6yYSugGizBIX+0MO2PY=,tag:GAPPLujhVWc0cx/wKx+2xw==,type:str]
             config:
                 scope: groups openid email
                 email_domains:
@@ -94,8 +94,8 @@ iap:
             upstream_service: alertmanager.monitoring.svc.cluster.local
             upstream_port: 9093
             client_id: alertmanager
-            client_secret: ENC[AES256_GCM,data:Vb6VYHvRrRwBicPzYL7rnA==,iv:IeDjsnMCWgZr+mPLP/Y/mvWeBZx5nBZHxc4y4L0RkxY=,tag:vOSPPZzOTNCzAPxSzmE8MA==,type:str]
-            encryption_key: ENC[AES256_GCM,data:BVT71cm8PgsEdZQdgyUA0Dtv5KN9OI0zYRsQTOwbeJg=,iv:JmSEcyge2N5KfyeP+tyhnRy5CWcT4omFNWpp1wZJll8=,tag:ocfuxMA5HCVQxO1hJ+ZuKw==,type:str]
+            client_secret: ENC[AES256_GCM,data:3TfUuphE2ArdYTmAMpKpHA==,iv:YL6O9/qJPVu13n5dLZ7ZduHUuTpKfP0e5hVuENFeRDM=,tag:B/Q8tP/8iI8ryP24sGpmDQ==,type:str]
+            encryption_key: ENC[AES256_GCM,data:b9N+L0pwlEqMJ/yVuwnYACSLKC4TkZdoVRSP2Xtw5fU=,iv:ss+IdG8GM74mcnZ33uqhYDhM2nYFHSmmpIpSZWKGVH4=,tag:oeUg5F5PyVd9LYdsIyMdOw==,type:str]
             config:
                 scope: groups openid email
                 email_domains:
@@ -110,8 +110,8 @@ iap:
             upstream_service: grafana.monitoring.svc.cluster.local
             upstream_port: 3000
             client_id: grafana
-            client_secret: ENC[AES256_GCM,data:Cil5Zw2EqOTAdRIYmr3Heg==,iv:EiElGM6yhvN5US4cfBbET+ZmLUOKjCHNJ+OypQMyj6I=,tag:64LsQNdfCKKQDygD3PBp0A==,type:str]
-            encryption_key: ENC[AES256_GCM,data:epL7nCFa6HVmUBK5sq1iJENmj2IMkCDqT7jr60TOEbI=,iv:tl6Cs30MLLy8aPOzYP3VafMcNFgNpPZy1dCbJmffS74=,tag:peKEK3J6EaGW4N3DwYnmgg==,type:str]
+            client_secret: ENC[AES256_GCM,data:jeHHVgusXEbxjMj5zitk5A==,iv:0yISI7nhLlfqLUPeGEyJZFmWpGabKFKJCWYBHQxV7ng=,tag:7nuUV1CkNufZXW3M7YKcxg==,type:str]
+            encryption_key: ENC[AES256_GCM,data:6Z29WpNY65oSZ1ZovNLSBtAe8SM9PirDmddXTigrZ3Y=,iv:PXDDknOU1L71haLk0bW05F5Q5AK6kKv6zNm+ZEfrCPg=,tag:/ULngT8YuuI4EHQMZvon9Q==,type:str]
             config:
                 scope: groups openid email
                 email_domains:
@@ -126,8 +126,8 @@ iap:
             upstream_service: karma.monitoring.svc.cluster.local
             upstream_port: 8080
             client_id: karma
-            client_secret: ENC[AES256_GCM,data:yj/2cyhZQnDMnsL0FfInqw==,iv:cjdBhrWsV/q332809EukwtdrbAif6CsIzM2pa/b4mRA=,tag:YTam0aJmsutVgCi/os7TuA==,type:str]
-            encryption_key: ENC[AES256_GCM,data:S0HKDwKCa6BkkY+en0afa6IvAwXzddSo5owNnIjO510=,iv:SR8yscK59Hbq++IcNlnvs52n1ckskno1u+Eah3XkFoU=,tag:maMA+U1ACfgjUeA88qtzoQ==,type:str]
+            client_secret: ENC[AES256_GCM,data:6RdUcWpZX7hYHbEEr0gycQ==,iv:qn1mAEBrdEuGVffE0VCok1FATa2PD8QBZVHpXXD3crw=,tag:b1e51T4o6yLTatL8uNlfjA==,type:str]
+            encryption_key: ENC[AES256_GCM,data:cWhjv2v5JWnAYJbZYw8UDTi7djGTnnPn9w7Nn87kMaY=,iv:k5+n9BI/Cb4IGt0arg7oNJv2UgpxVJKKAz5n57YMXjI=,tag:Pvrnax2jnlS5wG14/GLxWw==,type:str]
             config:
                 scope: groups openid email
                 email_domains:
@@ -143,27 +143,29 @@ minio:
     storeSize: 50Gi
     storageClass: kubermatic-backup
     credentials:
-        accessKey: ENC[AES256_GCM,data:5KDpMFtNfyM88FAdCv4e0a/Q4T/PwxbmdV27u50ylUc=,iv:IHtWalsvE6Fe3UOfGNyy4mik6BKOTG3qJScpjqQVboY=,tag:pgt+KuxuaPwOw6Sg+BafBw==,type:str]
-        secretKey: ENC[AES256_GCM,data:hW1BuD87ELyGj2GgktYES7VKegqszB7Xc92p/TXXaaY=,iv:a2s6aFFrsaevjGwQoa299hW+6d7gYwWVwqLv2xkoslA=,tag:8Ee7TYaUyp0i3wYNzxwULw==,type:str]
+        accessKey: ENC[AES256_GCM,data:RGCZIES/6PzL89ZAMVVD4NAb7nG+FIxqgaPo/THCc7U=,iv:oMhw5UZu2yegvciG5lJAt9fl32h+Cc4MoyImPuMR6AA=,tag:KQEWMncoznljCtqchlVPcQ==,type:str]
+        secretKey: ENC[AES256_GCM,data:r1K6XBSg3cB0iEOTFGBTGKdfwN9pYxIATHDmo/tNik0=,iv:ZEc1qx6aLr6HnBivOc6zSTyCSZSUlaN6XWzexjgedEc=,tag:3Zczm1NHLhnx9SCnK33tig==,type:str]
 telemetry:
-    uuid: 3352480d-7541-45b8-kadj-1e92826djfkw
+    # uuid is the unique identifier of the client where the agent is running.
+    # This field is required and will print an error message when that entry is missing.
+    uuid: 6110a471-8acf-4cec-9d21-6b6c3707b037
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
     age:
-        - recipient: age1fnxn5s3wz0wwlv0rv2g2l9rlmg9zg8hd938mxruzck70llxq5a0q6ude3q
+        - recipient: age1f4rjk4pgr06eceu53crpw0svlsjpms6vaqkkkelctvg47zn9caeqhjh9gn
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBMU2ZuOXZ1QVpBYnlxQzA5
-            T1pzaDYyZFNRbXI0Q0NGcm1mWnI5S2IwRkJzCkgvWFQzUlFVWnIvbTFZajllM3V1
-            UWxjcDk1SCtXUUwzRjYxUnhkWFhBQkkKLS0tIFJoNkQzbGM4K3dTMG56RE9QMS85
-            TGQ3K0wwdUpjbXJDVUx0a0taVEgvMEEKldtuSggwga0yzC3Sbf3Vlc0GPUnxXCkz
-            ljgqR2xcVlsxN7nOkiNbGdKBMhHgdgvSfzdHXtNPxtEdOnEeoYQHUg==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBYRjZhMFB4djRkUEdVQnlZ
+            TTBieG9KZVB1bCttRXg0bGV6TkI2RmgvYkd3Cmgxd2x5TnBHRXdINm5HREphVUJm
+            Y2NhUU1xMjF2bGNtRSszNXJVc0NFMFEKLS0tIHp4OFdad3NpTHdVUEtNcTlXRGdD
+            RWVobkhZQjVOR2tENVBhL1lnWHJYK1UKzJXX4nMf9LbSMyXmte+RMcw4jE8plFPq
+            GUYqbe7g73/7hXertRWJ2g3W3cRy2jVLE9Yf/sG4Z4Cd7U5lR76Yxg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2021-09-20T13:58:00Z"
-    mac: ENC[AES256_GCM,data:ir+TlcTT3cKLNmBeUuP4l7BsLLD79E3Azq/O4qsLbnWtIZ54lDbZwE2fzHIZfrPrRFV3ZheIhm5xygvhxa7NPYRTUJ/2vtL2ZArxWs6AFTChGlEwzD4Gub16jxunnxSTcKbD9fdnMXx5sJY6b4HbUnnoJpVB2xdWP6/kYjOA9LQ=,iv:ievIISrV0XlcAOEb8W/R/v/OCpf7F4C6UT+lb13lqbI=,tag:2mIKNtAekvtzJPUc92BFZQ==,type:str]
+    lastmodified: "2021-09-20T15:31:37Z"
+    mac: ENC[AES256_GCM,data:GuTSlgr0z87r4BVzA82o2KIgTrQYhiHsTTTms/qoeot7d/8PoERgLMJSncrcrUc//4QXFJboPIyiXVL0wIblhR2UHNOZZTzsJ07OAoZ+/ZH6XzzdbNEurGlfsQhxgObd7KpryJkGdFBMUkzi/1499/hAZT3C684frEL0fWFJ+4M=,iv:qz6HkbtsXoF5VSjbCKHReu8lNaFY8Wa/CqICdibPofc=,tag:0Z8ATceRA5gfe4z8wDhozg==,type:str]
     pgp: []
-    encrypted_regex: secret|Secret|key|Key|password|hash
+    encrypted_regex: (hash|secret|password|encryption_key|accessKey)
     version: 3.7.1

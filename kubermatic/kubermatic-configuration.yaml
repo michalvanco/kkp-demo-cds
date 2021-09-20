@@ -16,9 +16,9 @@ spec:
         issuerClientID: kubermaticIssuer
         skipTokenIssuerTLSVerify: true
         tokenIssuer: https://kkp-demo-cds.lab.kubermatic.io/dex
-        issuerClientSecret: ENC[AES256_GCM,data:W5OEMccuuvuHUjKwmBVFYWvuFkTcdJZzIFITQvIhesEMwOKHhI4zOWq3xw==,iv:vENbFqF007beHEUQi/FVsOnKdHrKR+Tj/xNYiEjXtJE=,tag:4Isp5Sm6Pcrtv9Ol+5RMwg==,type:str]
-        issuerCookieKey: ENC[AES256_GCM,data:Vnmd/dPQqhxSAvUIRYfKrus1PF96GD6hGqYd32kzouw=,iv:3fw+RbwjVXpLA0FQNfCNWab1yLf24K48xDFefK+wzOk=,tag:Ossth9bwkfyzh5ULyzAI2w==,type:str]
-        serviceAccountKey: ENC[AES256_GCM,data:aFU43IQkynIGmiXAvKiMBFo/j5xT/19A9Pty+LjmUbw=,iv:THRQBczZ8awCRvvws/8+ma6pFZnvl0qYSBJsJ9SzGrw=,tag:IeHylT/v8addTCzwHRN++A==,type:str]
+        issuerClientSecret: ENC[AES256_GCM,data:12qRSY8IgPfjYkMsjsgf1biWZvmg5GvhMb1OztDfb6KP1IC9X4LOeLpvrw==,iv:Q1K06NMrnc46pDKHqECTLtsvrsUkR/y73DxSpt7TRqE=,tag:u2kjrszV4s7sxMiHaemoxQ==,type:str]
+        issuerCookieKey: ENC[AES256_GCM,data:8NEcmQLXukEO5emMpqYDBtTyj5AdvBEGmkoiBBcsiBE=,iv:xOSJYisdFy+5IYV9+2sl3l1xbwZPbd2aH27hSlpdx8w=,tag:3rMxCNyBmqaiF/rTcC1UPw==,type:str]
+        serviceAccountKey: ENC[AES256_GCM,data:LJB4jBksVfGZUHaA85EKw3pYeP9oCV/LSO8jPkrz6bE=,iv:+Q/J1Jbrjx023ZFnS8bRpN0GTxLKyXSUGX+XjqEm16U=,tag:vOOqOWCdrL9cFvldBM80PQ==,type:str]
         issuerRedirectURL: https://kkp-demo-cds.lab.kubermatic.io/api/v1/kubeconfig
 sops:
     kms: []
@@ -26,17 +26,17 @@ sops:
     azure_kv: []
     hc_vault: []
     age:
-        - recipient: age1fnxn5s3wz0wwlv0rv2g2l9rlmg9zg8hd938mxruzck70llxq5a0q6ude3q
+        - recipient: age1f4rjk4pgr06eceu53crpw0svlsjpms6vaqkkkelctvg47zn9caeqhjh9gn
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyQW9TUUlzY2toUlhXQi91
-            c0tUNW1Obm9yZjI0dTJyU2JMc2pYY3ZNS3k0CmptT1FhSFdTdlE0dmMvRFpSOGRk
-            RSswaXNEamxjZ0YwcWtyNXhSazdjVlUKLS0tIG5uZmFkcnZCbHJWb0x4NWtrWXZI
-            YTI5elc3dmNOcXFqdHA3ejFVaWFuclEKdbO+n5peEBnVsuvCEcM+eoVMfeO1L47t
-            S0/MOTCsWz5XjUE26Mgk2vUCpvXbp/S3nEHiZ6EZrhaV/dQC5oqBkw==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBIaVI0SlVBczN6MjUvU2pI
+            S3pjQ1B5YSt3U1h6U1hvZzl6YTVyKzYvQkVRCmR1M0FLYjJMd3lOdkN2Q1l2cGJu
+            V0tWeFJOTXU0Ylc5UjB5UEZ0STc5ZkEKLS0tIGkwU2NBbGo4MHJ3NXRxclVzeWJU
+            VlRGcS9LVUVScjdET01rQithR0M5YjQKS/QTWoitOJwrJ5ixfV4nd3jxQiPgPQQQ
+            uqEEbirZUcblNIH1EuBYY/Cihoj8ie5SN+FNYowXM7HQLRa5plre1A==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2021-09-20T12:07:24Z"
-    mac: ENC[AES256_GCM,data:v3IbSHykxGSD+Jgl4E8sxn5RRasgrPPw0r/3oIthA64/UJS4tZxm1Rw2PfKECf1h+xVO0nWJVfbeeZyZ3rNKM9gmuZOCZoLNIotSrlyWctB5V+ZAH2MywZFZQF9E6K2GCfMyjYD5D7gwH/AEl1J7nosQ2Vi4gQ9f05Gnj4qjx6s=,iv:t4yTtiMaAsgpPoUFqqlypLyjvStmvHapofZHV1Vaao4=,tag:2qb8LYrlzLPjLV2kiRcnrg==,type:str]
+    lastmodified: "2021-09-20T15:31:37Z"
+    mac: ENC[AES256_GCM,data:zbNIC7R12BhHgVfpF9ihDefGqx1xZlK6XmaCB8IByMAQhwKgQIWgeVAof0yGjQ/IU+dFCmmUvR0aG5JgxdtDjDyzj5YMExLARNhaOxnHRiz8tzNslnihR36GuOd4od170wnz0NsRGXgymXxO4zKDPElJo1VNYp8RLVvnCHzK08I=,iv:reLP/vrgYF4TgH1Uv8V8eHVtWQDY20hBCa2eh5CePPE=,tag:9J22nJICLXtxQwP8TPqw0g==,type:str]
     pgp: []
     encrypted_regex: (issuerClientSecret|issuerCookieKey|serviceAccountKey)
     version: 3.7.1

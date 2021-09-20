@@ -8,4 +8,3 @@ secrets.md
 .idea
 .kubeconfig
 .vscode
-terraform/aws/k8s_rsa*

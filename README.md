@@ -101,7 +101,7 @@ Flux itself is also managed by the same GitHub repository
 Sensitive values are encrypted using the [SOPS](https://fluxcd.io/docs/guides/mozilla-sops/)
 together with using the Age secret pair (generated from start.kubermatio.io).
 
-Public AGE key for encryption is: `age1fnxn5s3wz0wwlv0rv2g2l9rlmg9zg8hd938mxruzck70llxq5a0q6ude3q`.
+Public AGE key for encryption is: `age1f4rjk4pgr06eceu53crpw0svlsjpms6vaqkkkelctvg47zn9caeqhjh9gn`.
 
 ## Operational tasks
 
