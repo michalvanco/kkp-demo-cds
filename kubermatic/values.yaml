@@ -145,6 +145,8 @@ minio:
     credentials:
         accessKey: ENC[AES256_GCM,data:Dqm2FbxjFccq/cIXaRVMrpuS8A3LU794XYGZ9EkYgDI=,iv:/nveKUjArm7snb8j2AA45hb5b6RZ4opPuDWkgg8zmFY=,tag:G4/P+ukgO3DSaojCdclGaA==,type:str]
         secretKey: ENC[AES256_GCM,data:sgpfv02Pm+O9+nKnyUHn3j0q85B+BtXXFGcZ/Ks7jq0=,iv:q+PetzKJqkbh6CuNvifpDirmsdeeBsE5PJlVZlq7oaU=,tag:lKudpSUWpZaee412CZqrNw==,type:str]
+telemetry:
+  uuid: 3352480d-7541-45b8-kadj-1e92826djfkw
 sops:
     kms: []
     gcp_kms: []
