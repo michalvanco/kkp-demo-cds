@@ -93,7 +93,7 @@ jobs:
       - name: Terraform plan
         working-directory: terraform/aws
         run: |
-          terraform init -backend-config="bucket=tf-state-kkp-" \
+          terraform init -backend-config="bucket=tf-state-kkp-lkbb0vyp0zui" \
             -backend-config="region=eu-central-1"
           terraform plan -out=plan-out.txt
           terraform show -json plan-out.txt > plan.json
@@ -131,7 +131,7 @@ jobs:
       - name: Terraform apply
         working-directory: terraform/aws
         run: |
-          terraform init -backend-config="bucket=tf-state-kkp-" \
+          terraform init -backend-config="bucket=tf-state-kkp-lkbb0vyp0zui" \
             -backend-config="region=eu-central-1"
           terraform apply -auto-approve
 
@@ -158,7 +158,7 @@ jobs:
       - name: Retrieve terraform state
         working-directory: terraform/aws
         run: |
-          terraform init -backend-config="bucket=tf-state-kkp-" \
+          terraform init -backend-config="bucket=tf-state-kkp-lkbb0vyp0zui" \
             -backend-config="region=eu-central-1"
           terraform output -json > output.json
       - name: Provision/update cluster with Kubeone apply
@@ -189,7 +189,7 @@ jobs:
       - name: Retrieve terraform state
         working-directory: terraform/aws
         run: |
-          terraform init -backend-config="bucket=tf-state-kkp-" \
+          terraform init -backend-config="bucket=tf-state-kkp-lkbb0vyp0zui" \
             -backend-config="region=eu-central-1"
           terraform output -json > output.json
       - name: Retrieve kubeconfig of k8s cluster
@@ -273,7 +273,7 @@ jobs:
         if: steps.check_flux.outputs.files_exists == 'false'
         working-directory: terraform/aws
         run: |
-          terraform init -backend-config="bucket=tf-state-kkp-" \
+          terraform init -backend-config="bucket=tf-state-kkp-lkbb0vyp0zui" \
             -backend-config="region=eu-central-1"
           terraform output -json > output.json
       - name: Retrieve kubeconfig of k8s cluster
