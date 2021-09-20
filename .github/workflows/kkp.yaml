@@ -23,7 +23,7 @@ jobs:
   # Run checks on terraform module for k8s
   terraform-kkp-validate:
     runs-on: ubuntu-20.04
-    container: quay.io/kubermatic/startio-github-ci:v0.2.0-0
+    container: quay.io/kubermatic/startio-ci:v0.2.0-0
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -37,7 +37,7 @@ jobs:
   # Prepares terraform backend (s3 bucket) if not exists
   terraform-backend-prepare:
     runs-on: ubuntu-20.04
-    container: quay.io/kubermatic/startio-github-ci:v0.2.0-0
+    container: quay.io/kubermatic/startio-ci:v0.2.0-0
     steps:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -70,7 +70,7 @@ jobs:
     needs:
       - terraform-kkp-validate
       - terraform-backend-prepare
-    container: quay.io/kubermatic/startio-github-ci:v0.2.0-0
+    container: quay.io/kubermatic/startio-ci:v0.2.0-0
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -108,7 +108,7 @@ jobs:
     runs-on: ubuntu-20.04
     needs: terraform-plan
     if: ${{ github.event_name == 'push' }}
-    container: quay.io/kubermatic/startio-github-ci:v0.2.0-0
+    container: quay.io/kubermatic/startio-ci:v0.2.0-0
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -140,7 +140,7 @@ jobs:
     runs-on: ubuntu-20.04
     needs: terraform-apply
     if: ${{ github.event_name == 'push' }}
-    container: quay.io/kubermatic/startio-github-ci:v0.2.0-0
+    container: quay.io/kubermatic/startio-ci:v0.2.0-0
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -171,7 +171,7 @@ jobs:
     runs-on: ubuntu-20.04
     needs: kubeone-apply
     if: ${{ github.event_name == 'push' }}
-    container: quay.io/kubermatic/startio-github-ci:v0.2.0-0
+    container: quay.io/kubermatic/startio-ci:v0.2.0-0
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -244,7 +244,7 @@ jobs:
     needs:
       - kkp-deploy
     if: ${{ github.event_name == 'push' }}
-    container: quay.io/kubermatic/startio-github-ci:v0.2.0-0
+    container: quay.io/kubermatic/startio-ci:v0.2.0-0
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
