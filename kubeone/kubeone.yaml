@@ -9,23 +9,3 @@ containerRuntime:
 addons:
     enable: true
     path: ./addons
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age:
-        - recipient: age1fnxn5s3wz0wwlv0rv2g2l9rlmg9zg8hd938mxruzck70llxq5a0q6ude3q
-          enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB5M2lQRmdPQUt0UkpETDhQ
-            UFlWSjBNbGxqVkN1aG9nNHRGSFNiVTYwdlJvCnJKb3RzNERoSjFBdmdYdHZOdU9r
-            NEplUThlaytwbVArQThsYVdiUUM5V3cKLS0tIGYwTjFSNlF0YTloaTFBVStDazBF
-            TVJuYjlSdHowU0x1VFRmTTcyMVcwTzgKQXL9SBcUKMUTaoqsYI/nvC0U13Yj0FMJ
-            OZQRibuS6OXdOk8QKH8CgmreLcR3kXDL5kve7dD6hwhwGKPFVn2Stg==
-            -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2021-09-20T12:07:24Z"
-    mac: ENC[AES256_GCM,data:ibDqZt5Rr19Lhc2ba6CeRIh8Sv7Je3EKekhapdJmK2H6KY6edacBHArOU65ruzQp9AwjQby8atnBRdHLBLfVwABD6rmzv2ERmg/tnNesa1fIh4wJ+eH5y1Fh1FEkuTBMjUh8HxzuUkU1pBZkr5yQ7Fj/ctgMHSPKnjgRQWK85Tk=,iv:ktN3EUyDafXP8OVjK/opPaj6nVYe1D/7Mo5KvXx6KHE=,tag:oswVcNv13e5Oo2g21GL0NA==,type:str]
-    pgp: []
-    encrypted_regex: (user|password)
-    version: 3.7.1
