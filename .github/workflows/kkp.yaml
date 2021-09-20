@@ -60,7 +60,7 @@ jobs:
         working-directory: terraform/aws
         run: |
           pwd
-          ls
+          ls -la
           ./setup_terraform_backend.sh
         if: steps.s3-check.outputs.exists == 'false'
       - name: S3 bucket exists
