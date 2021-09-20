@@ -50,7 +50,7 @@ jobs:
         env:
           FILE: bucket-ready
           AWS_REGION: eu-central-1
-          AWS_S3_BUCKET: tf-state-kkp-eu-central-1
+          AWS_S3_BUCKET: tf-state-kkp-lkbb0vyp0zui
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Check out repository
