@@ -1,0 +1,22 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: logging
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: monitoring
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: iap
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: minio

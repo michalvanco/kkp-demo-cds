@@ -1,0 +1,9 @@
+apiVersion: kubermatic.k8s.io/v1
+kind: User
+metadata:
+  name: seotk7wfosmb5sfvsvp8qrl4wwridiyh
+spec:
+  admin: true
+  email: michal@kubermatic.com
+  id: KctDL1pnkrl60F45IgXyON3uiAnyKnsA
+  name: michal@kubermatic.com

@@ -1,0 +1,11 @@
+secrets.md
+.age.txt
+*.iml*
+*.private.env.json
+.DS_Store
+.cover
+.env
+.idea
+.kubeconfig
+.vscode
+terraform/aws/k8s_rsa*

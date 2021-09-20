@@ -1,0 +1,17 @@
+apiVersion: kubermatic.k8s.io/v1
+kind: Seed
+metadata:
+  name: kubermatic
+  namespace: kubermatic
+spec:
+  country: DE
+  datacenters:
+    aws-eu-central-1:
+      country: "DE"
+      location: "Frankfurt"
+      spec:
+        aws:
+          region: "eu-central-1"
+  kubeconfig:
+    name: kubeconfig-cluster
+    namespace: kubermatic

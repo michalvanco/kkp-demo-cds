@@ -1,0 +1,8 @@
+apiVersion: kubermatic.k8s.io/v1
+kind: UserProjectBinding
+metadata:
+  name: 3lpcxl76sl
+spec:
+  group: owners-vrwsfhuf4y
+  projectId: vrwsfhuf4y
+  userEmail: michal@kubermatic.com
