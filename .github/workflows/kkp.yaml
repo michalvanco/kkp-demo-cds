@@ -160,12 +160,6 @@ jobs:
           terraform init -backend-config="bucket=tf-state-kkp-6qzzv6zqfb0d" \
             -backend-config="region=eu-central-1"
           terraform output -json > output.json
-      - name: Decrypt KubeOne config files
-        working-directory: kubeone
-        run: |
-          echo ${{ secrets.SOPS_AGE_SECRET_KEY }} > .age.txt
-          export SOPS_AGE_KEY_FILE=$GITHUB_WORKSPACE/kubeone/.age.txt
-          sops -d -i kubeone.yaml
       - name: Provision/update cluster with Kubeone apply
         working-directory: kubeone
         run: |
