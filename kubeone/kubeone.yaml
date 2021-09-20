@@ -1,7 +1,7 @@
 apiVersion: kubeone.io/v1beta1
 kind: KubeOneCluster
 versions:
-    kubernetes: v1.22.1
+    kubernetes: v1.21.4
 cloudProvider:
     aws: {}
 containerRuntime:
