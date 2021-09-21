@@ -4,7 +4,7 @@ metadata:
   name: sops-kustomization
   namespace: kubermatic
 spec:
-  interval: 10m
+  interval: 30s
   path: ./flux/clusters/master-sops
   prune: true
   sourceRef:
