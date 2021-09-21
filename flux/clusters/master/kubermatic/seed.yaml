@@ -12,6 +12,16 @@ spec:
       spec:
         aws:
           region: "eu-central-1"
+    gcp-eu-west-3:
+      country: "DE"
+      location: "Frankfurt"
+      spec:
+        gcp:
+          region: "europe-west3"
+          # Optional: Regional clusters spread their resources across multiple availability zones.
+          # Refer to the official documentation for more details on this:
+          # https://cloud.google.com/kubernetes-engine/docs/concepts/regional-clusters
+          regional: true
   kubeconfig:
     name: kubeconfig-cluster
     namespace: kubermatic
