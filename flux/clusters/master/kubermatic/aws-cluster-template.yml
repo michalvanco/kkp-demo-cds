@@ -1,0 +1,39 @@
+apiVersion: kubermatic.k8s.io/v1
+kind: ClusterTemplate
+clusterLabels:
+  project-id: fgcjtau7tr
+metadata:
+  annotations:
+    kubermatic.io/initial-machinedeployment-request: '{"name":"angry-hodgkin","creationTimestamp":"0001-01-01T00:00:00Z","spec":{"replicas":1,"template":{"cloud":{"aws":{"instanceType":"t3.medium","diskSize":25,"volumeType":"standard","ami":"","tags":null,"availabilityZone":"eu-central-1a","subnetID":"subnet-01775486559312b19","assignPublicIP":true,"isSpotInstance":false,"spotInstanceMaxPrice":"","spotInstancePersistentRequest":false}},"operatingSystem":{"ubuntu":{"distUpgradeOnBoot":false}},"versions":{"kubelet":""}}},"status":{}}'
+    user: michal@kubermatic.com
+  labels:
+    name: aws-user-cluster-tpl
+    project-id: fgcjtau7tr
+    scope: project
+  name: 8wggtjrjsp
+credential: credential-aws-8wggtjrjsp
+spec:
+  cloud:
+    aws:
+      credentialsReference:
+        name: credential-aws-8wggtjrjsp
+        namespace: kubermatic
+      instanceProfileName: ""
+      roleARN: ""
+      routeTableId: ""
+      securityGroupID: ""
+      vpcId: vpc-9ab315f0
+    dc: aws-eu-central-1
+  clusterNetwork:
+    dnsDomain: ""
+    proxyMode: ""
+  componentsOverride:
+    etcd:
+      clusterSize: 3
+  containerRuntime: containerd
+  enableUserSSHKeyAgent: true
+  exposeStrategy: NodePort
+  humanReadableName: competent-swanson
+  pause: false
+  version: 1.21.5
+userSshKeys: []
